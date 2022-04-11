@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="62.0" prefWidth="130.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ColorPicker fx:id="colorPicker" layoutX="3.0" layoutY="36.0" />
+            <ComboBox fx:id="comboBox" layoutX="3.0" prefHeight="25.0" prefWidth="125.0" promptText="Прямоугольник" visibleRowCount="3" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="216.0" prefWidth="303.0" style="-fx-background-color: lightblue;" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Canvas fx:id="canva" height="216.0" width="303.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Slider fx:id="slider" blockIncrement="1.0" layoutX="30.0" layoutY="62.0" majorTickUnit="5.0" max="15.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+            <TextField fx:id="txtbox" alignment="TOP_CENTER" layoutX="26.0" layoutY="25.0" text="25" />
+            <Label fx:id="sinusValue" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="6.0" prefHeight="17.0" prefWidth="100.0" text="Label" />
+            <Slider fx:id="slider2" blockIncrement="5.0" layoutX="31.0" layoutY="100.0" majorTickUnit="10.0" max="60.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <Button fx:id="btn" mnemonicParsing="false" text="Draw" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
