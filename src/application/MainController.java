@@ -69,7 +69,7 @@ public class MainController implements Initializable
 			}
 
 			if(comboBox.getValue() == "Прямоугольник") 
-				gc.fillRect(mouseX, mouseY, slider.getValue(), Double.parseDouble(txtbox.getText()));
+				gc.fillRect(mouseX, mouseY, Double.parseDouble(txtbox.getText(), Double.parseDouble(txtbox.getText()));
 			
 			if(comboBox.getValue() == "Синус")
 			{
